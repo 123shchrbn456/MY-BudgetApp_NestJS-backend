@@ -27,6 +27,7 @@ import { MyTryModule } from './my-try/my-try.module'
 				password: configService.get('POSTGRES_PASSWORD'),
 				database: configService.get('POSTGRES_DATABASE'),
 				synchronize: false,
+				ssl: true,
 				entities: [__dirname + '/**/*.entity{.js, .ts}'],
 			}),
 			inject: [ConfigService],
