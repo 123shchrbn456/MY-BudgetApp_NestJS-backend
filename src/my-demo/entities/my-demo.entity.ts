@@ -12,5 +12,5 @@ export class MyDemo {
 	@Column()
 	title: string
 	@CreateDateColumn()
-	createdAt: Date
+	created_at: Date
 }
